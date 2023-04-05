@@ -1,0 +1,50 @@
+.backdrop {
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(5, 5, 5, 0.2), rgba(6, 6, 6, 0.609));
+}
+
+.modal-container {
+    position: fixed;
+    background: #e8e8e8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    width: 60%;
+    top: 30%;
+    right:25%;
+    padding: 3rem;
+    z-index: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closebtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .modal-container {
+    left: calc(50% - 20rem);
+    width: 35rem;
+  }
+}
+

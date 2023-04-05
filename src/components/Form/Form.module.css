@@ -1,0 +1,47 @@
+.form input {
+  display: inline-block;
+  color: #0f0e0e;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f5f5f5;;
+  height: 35px;
+  width: 15rem;
+  margin-bottom: 10px;
+  margin-top: 7px;
+  padding-left: 10px;
+
+}
+
+.form input:focus {
+  border: 2px solid rgb(135, 132, 132);
+}
+
+label {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-left: 15px;
+  color: rgb(140, 134, 134);
+  display: block;
+  margin-top: 10px;
+}
+
+:focus {
+  outline: none;
+}
+
+.error-txt {
+  color: #b40e0e;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #985858;
+}
+
+.h2txt{
+  margin-bottom: 30px;
+}

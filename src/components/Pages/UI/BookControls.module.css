@@ -1,0 +1,66 @@
+
+.btn {
+  display: inline;
+  align-items: center;
+  justify-content:center;
+  color: white;
+  background-color: #b3201b;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  width: 100px;
+  height: 3em;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 25px;
+  padding: 4px;
+  font-weight: bold;
+  
+}
+
+.btnmove {
+  display: inline;
+  align-items: center;
+  justify-content:center;
+  color: white;
+  background-color: #b3201b;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 25px;
+  width: 100px;
+  height: 3em;
+  padding: 9px;
+  padding-top: 4px;
+  font-weight: bold;
+  
+  
+}
+
+.btnbsh{
+  display: inline;
+  align-items: center;
+  justify-content:center;
+  color: white;
+  background-color: #b3201b;;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 25px;
+  width: 100px;
+  height: 3em;
+  padding: 4px;
+  font-weight: bold;
+  
+}
+

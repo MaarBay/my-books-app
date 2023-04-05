@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Main from "./components/Main/Main";
+import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import WishList from "./components/Pages/Wishlist";
+import Bookshelf from "./components/Pages/Bookshelf";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Banner from "./components/Banner/Banner";
+import GlobalProvider from "./context/GlobalState";
 
-function App() {
+const App = () => {
+  const [closeBanner, setCloseBanner] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalProvider>
+      {closeBanner && (
+        <Banner close={closeBanner} onClose={() => setCloseBanner(false)} />
+      )}
+      <Header />
+      <Routes>
+        <Route path="*" element={<Main />}></Route>
+        <Route path="/wishlist" element={<WishList />}></Route>
+        <Route path="/bookshelf" element={<Bookshelf />}></Route>
+      </Routes>
+      <Footer />
+    </GlobalProvider>
   );
-}
+};
 
 export default App;

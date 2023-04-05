@@ -1,0 +1,27 @@
+.banner-div {
+  height: 2.2rem;
+  width: 100%;
+  background-color: #b3201b;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text {
+  color: white;
+  margin-left: 10px;
+  font-size: 13px;
+  padding-bottom: 28px;
+
+}
+
+.close-icon {
+  margin-left: 5px;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-top: 6px;
+  cursor: pointer;
+}
