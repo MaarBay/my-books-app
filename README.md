@@ -24,7 +24,7 @@ My books is a web app made with [React](https://react.dev) and lets users search
 - CSS Module
 
 
-*View and interact with the project [here]()*
+*View and interact with the project [here](https://MaarBay.github.io/my-books-app)*
 
 
 ![Image](./src/images/readme.png)
