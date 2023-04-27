@@ -10,7 +10,7 @@ This app is my project for personal front end web development portfolio.
 
 - useState, useEffect, useContext, useReducer hooks
 - props and lifting the state up 
-- Modals (pop ups/ overlays)
+- Modals (pop ups/overlays)
 - React Portals and Fragments
 - Routes and NavLink (React Router Dom)
 - React Icons
