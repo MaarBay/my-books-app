@@ -7,16 +7,23 @@ import classes from "./Bookshelf.module.css";
 
 const Bookshelf = () => {
   const { bookshelf } = useContext(GlobalContext);
+
+  const uniqueBooksById ={};
+  for (const book of bookshelf) {
+    uniqueBooksById[book.id]= book;
+  }
+
+  const uniqueBooks = Object.values(uniqueBooksById);
   return (
     <Fragment>
       <div className={classes.wishlist}>
         <h1 className={classes.heading}>My Bookshelf</h1>
         <span className={classes.counter}>
-          {bookshelf.length} {bookshelf.length === 1 ? "Book" : "Books"}
+          {uniqueBooks.length} {uniqueBooks.length === 1 ? "Book" : "Books"}
         </span>
-        {bookshelf.length > 0 ? (
+        {uniqueBooks.length > 0 ? (
           <div className={classes["books-grid"]}>
-            {bookshelf.map((book) => (
+            {uniqueBooks.map((book) => (
               <BookCard
                 book={book}
                 key={book.id}
