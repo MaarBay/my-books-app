@@ -100,3 +100,10 @@ background-color: #b3201b;
     padding-top: 30px;
 }
 
+@media only screen and (max-width: 767px) {
+  .output-container {
+    width: 70%;
+    display: table-row;
+  }
+}
+
